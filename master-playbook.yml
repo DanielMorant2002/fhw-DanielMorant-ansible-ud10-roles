@@ -1,0 +1,9 @@
+---
+- name: Roles
+  become: yes
+  hosts: webservers
+  roles: 
+    - role: envprep
+    - role: nginx
+    - role: deployhtml
+...
